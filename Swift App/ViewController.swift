@@ -14,10 +14,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var coolLabel: UILabel!
 
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
+    
     @IBAction func buttonTapped(_ sender: AnyObject) {
         // code that runs whenever you tap the button
-        print("ok, buttonTapped is called")
-        TheLabel.text = "Bonjour !"
+        print(text1.text!)
+        print(text2.text!)
     }
     
     @IBAction func coolbutton(_ sender: AnyObject) {
